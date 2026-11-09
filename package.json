@@ -1,0 +1,10 @@
+
+{
+  "name": "vinod-personal-portfolio",
+  "version": "2.0.0",
+  "description": "Personal Portfolio Website with CI/CD",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

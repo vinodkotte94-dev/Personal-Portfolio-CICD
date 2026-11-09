@@ -1,5 +1,7 @@
 
-/* Email validation function */
+/* =================================
+   EMAIL VALIDATION FUNCTION
+================================= */
 
 export function isValidEmail(email) {
 
@@ -9,24 +11,36 @@ export function isValidEmail(email) {
 
 }
 
-/* Contact form validation */
+
+/* =================================
+   CONTACT FORM VALIDATION
+================================= */
 
 export function validateContactForm(name, email, message) {
 
     return (
         typeof name === "string" &&
         name.trim().length > 0 &&
+
         typeof email === "string" &&
         isValidEmail(email.trim()) &&
+
         typeof message === "string" &&
         message.trim().length >= 10
     );
 
 }
 
-/* Contact form functionality */
 
-const contactForm = document.getElementById("contactForm");
+/* =================================
+   CONTACT FORM FUNCTIONALITY
+================================= */
+
+const contactForm =
+    typeof document !== "undefined"
+        ? document.getElementById("contactForm")
+        : null;
+
 
 if (contactForm) {
 
@@ -35,10 +49,13 @@ if (contactForm) {
         event.preventDefault();
 
         const name = document.getElementById("name").value;
+
         const email = document.getElementById("email").value;
+
         const message = document.getElementById("message").value;
 
         const status = document.getElementById("formStatus");
+
 
         if (validateContactForm(name, email, message)) {
 
