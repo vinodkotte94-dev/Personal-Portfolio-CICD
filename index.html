@@ -4,56 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Version 1</title>
+
+    <title>Vinod Kotte | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Navigation -->
     <header>
-        <h1>My Portfolio</h1>
+        <nav class="navbar">
+            <h2 class="logo">Vinod<span>.</span></h2>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello! I am a Computer Science student.</p>
-    </section>
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am interested in software development
-        and technology.</p>
-    </section>
+            <h1>Hello, I'm <span>Vinod Kotte</span></h1>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+            <h2>Computer Science Student</h2>
 
-        <div>
-            <h3>Portfolio Website</h3>
-            <p>My personal portfolio project.</p>
+            <p>
+                I am passionate about software development,
+                web technologies, and Artificial Intelligence.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <!-- About -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
 
-        <form id="contactForm">
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="about-content">
+            <p>
+                I am a B.Tech Computer Science and Engineering
+                student specializing in Artificial Intelligence
+                and Machine Learning.
+
+                I enjoy learning new technologies and developing
+                practical software applications.
+            </p>
+
+            <h3>My Skills</h3>
+
+            <div class="skills">
+                <span>Java</span>
+                <span>Python</span>
+                <span>C</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Machine Learning</span>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects -->
+    <section id="projects" class="section projects-section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Crop Disease Detection</h3>
+                <p>
+                    An AI-based application that identifies
+                    crop diseases from plant leaf images.
+                </p>
+                <span>Python | Machine Learning</span>
+            </div>
+
+            <div class="project-card">
+                <h3>NetShield AI</h3>
+                <p>
+                    A network anomaly detection and threat
+                    monitoring application.
+                </p>
+                <span>Python | AI | Security</span>
+            </div>
+
+            <div class="project-card">
+                <h3>DocuPulse</h3>
+                <p>
+                    A document management application that
+                    tracks expiry dates and reminders.
+                </p>
+                <span>React | Node.js | MongoDB</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive website to showcase
+                    my skills and projects.
+                </p>
+                <span>HTML | CSS | JavaScript</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="contact-description">
+            Have a project or opportunity? Feel free to contact me.
+        </p>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Enter your message"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+            <p id="formStatus" role="status" aria-live="polite"></p>
+
+        </form>
+
+        <p>
+            Email:
+            <a href="mailto:vinodkotte76@gmail.com">
+                vinodkotte76@gmail.com
+            </a>
+        </p>
+
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Copyright 2026 My Portfolio</p>
+        <p>© 2026 Vinod Kotte. All Rights Reserved.</p>
+        <p>Designed using HTML, CSS and JavaScript.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+
 </body>
 </html>
